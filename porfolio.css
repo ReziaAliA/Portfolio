@@ -11,13 +11,78 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: black;
+   padding-top: 0;
 }.navbar-toggler{
     background-color: #000;
-   }   #navbarNav ul li a{
+   }
+    
+   #home{
+    margin: top 60px;
+    }
+    .fixed-left {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh; /* Full height */
+      width: 150px; /* Adjust width as needed */
+      background-color: #333;
+      z-index: 1000;
+      overflow-y: auto;
+  }
+  
+  /* Vertical list styling */
+  .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+  }@media (max-width: 991.98px) {
+    .fixed-left {
+      
+      width: 130px;
+        height: auto;
+        position: fixed; /* Repositions navbar at the top */
+    }
+
+    .content {
+        margin-left: 0; /* Removes side margin on smaller screens */
+    }
+}
+  
+  /* Logo item styling */
+  .logo-item {
+      padding-bottom: 20px; /* Add some space after the logo */
+      text-align: center;
+      margin-top: 10px;
+  }
+  
+  .logo-item img {
+      width: 100px; /* Adjust logo size */
+      max-width: 100%;
+  }
+  
+  /* Navbar links styling */
+  .navbar-nav .nav-link {
+      color: white;
+      padding: 10px;
+      text-align: left;
+  }
+  
+  .navbar-nav .nav-link:hover {
+      background-color: #000000; 
+  }
+  
+
+  .content {
+      margin-left: 240px; /* Same as the navbar width */
+      padding: 20px;
+  }
+   
+   #navbarNav ul li a{
     font-size: 18px;
     text-decoration: none;
     color: white;
     position: relative;
+    margin-bottom: 40px;
    }#navbarNav ul li a:hover{
 
 background: black;
@@ -32,6 +97,8 @@ color: #ff004f;
 .hero-section h1 {
     font-size: 50px;
    
+}.nav-item{
+margin-left: 40px;
 }
 
 /* Navbar */
